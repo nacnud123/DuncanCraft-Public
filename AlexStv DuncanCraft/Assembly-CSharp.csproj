@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\Save.cs" />
     <Compile Include="Assets\Scripts\Block.cs" />
     <Compile Include="Assets\Scripts\Modify.cs" />
+    <Compile Include="Assets\Scripts\BlockDirt.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

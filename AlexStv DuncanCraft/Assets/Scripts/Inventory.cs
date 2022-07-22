@@ -38,6 +38,7 @@ public class Inventory : MonoBehaviour
         blocks.Add(new BlockBlueWool());//15
         //
         blocks.Add(new BlockSlab());//16
+        blocks.Add(new BlockDirt());//16
 
     }
 

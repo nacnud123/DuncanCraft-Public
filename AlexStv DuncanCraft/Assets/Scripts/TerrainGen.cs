@@ -26,6 +26,7 @@ public class TerrainGen
     private float coalSize = 2;
     private float coalFrequency = .01f;
 
+    bool test = false;
 
 
     public Chunk ChunkGen(Chunk chunk, int randY)
@@ -72,7 +73,14 @@ public class TerrainGen
             }
             else if (y <= dirtHeight && caveSize < caveChance)
             {
-                SetBlock(x, y, z, new BlockGrass(), chunk);
+                if(y < dirtHeight)
+                {
+                    SetBlock(x, y, z, new BlockDirt(), chunk);
+                }
+                else
+                {
+                    SetBlock(x, y, z, new BlockGrass(), chunk);
+                }
                 if (y == dirtHeight && GetNoise(x, randY, z, treeFrequency, 100) < treeDensity)
                     CreateTree(x, y + 1, z, chunk);
             }
