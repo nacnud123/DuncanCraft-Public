@@ -87,6 +87,7 @@ public class Modify : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(transform.position, transform.forward, out hit, 4, layerMask))
             {
+                
                 EditTerrain.SetBlock(hit, new BlockAir());
             }
         }

@@ -11,6 +11,8 @@ public class Block
     const float tileSize = 0.125f;
     public bool changed = true;
 
+    float slabHeight = -.05f;
+
     //Base block constructor
     public Block()
     {
@@ -204,6 +206,86 @@ public class Block
         return meshData;
     }
 
+    protected virtual MeshData FaceDataEastHalf // Half
+        (Chunk chunk, int x, int y, int z, MeshData meshData)
+    {
+        meshData.AddVertex(new Vector3(x + 0.5f, y - 0.5f, z - 0.5f));
+        meshData.AddVertex(new Vector3(x + 0.5f, y + slabHeight, z - 0.5f));
+        meshData.AddVertex(new Vector3(x + 0.5f, y + slabHeight, z + 0.5f));
+        meshData.AddVertex(new Vector3(x + 0.5f, y - 0.5f, z + 0.5f));
+
+        meshData.AddQuadTriangles();
+        meshData.uv.AddRange(FaceUVs(Direction.east));
+        return meshData;
+    }
+
+    protected virtual MeshData FaceDataWestHalf // Half
+        (Chunk chunk, int x, int y, int z, MeshData meshData)
+    {
+        meshData.AddVertex(new Vector3(x - 0.5f, y - 0.5f, z + 0.5f));
+        meshData.AddVertex(new Vector3(x - 0.5f, y + slabHeight, z + 0.5f));
+        meshData.AddVertex(new Vector3(x - 0.5f, y + slabHeight, z - 0.5f));
+        meshData.AddVertex(new Vector3(x - 0.5f, y - 0.5f, z - 0.5f));
+
+        meshData.AddQuadTriangles();
+        meshData.uv.AddRange(FaceUVs(Direction.west));
+        return meshData;
+    }
+
+    protected virtual MeshData FaceDataNorthHalf // Half
+        (Chunk chunk, int x, int y, int z, MeshData meshData)
+    {
+        meshData.AddVertex(new Vector3(x + 0.5f, y - 0.5f, z + 0.5f));
+        meshData.AddVertex(new Vector3(x + 0.5f, y + slabHeight, z + 0.5f));
+        meshData.AddVertex(new Vector3(x - 0.5f, y + slabHeight, z + 0.5f));
+        meshData.AddVertex(new Vector3(x - 0.5f, y - 0.5f, z + 0.5f));
+
+        meshData.AddQuadTriangles();
+        meshData.uv.AddRange(FaceUVs(Direction.north));
+        return meshData;
+    }
+
+    protected virtual MeshData FaceDataSouthHalf // Half
+       (Chunk chunk, int x, int y, int z, MeshData meshData)
+    {
+        meshData.AddVertex(new Vector3(x - 0.5f, y - 0.5f, z - 0.5f));
+        meshData.AddVertex(new Vector3(x - 0.5f, y + slabHeight, z - 0.5f));
+        meshData.AddVertex(new Vector3(x + 0.5f, y + slabHeight, z - 0.5f));
+        meshData.AddVertex(new Vector3(x + 0.5f, y - 0.5f, z - 0.5f));
+
+        meshData.AddQuadTriangles();
+        meshData.uv.AddRange(FaceUVs(Direction.south));
+        return meshData;
+    }
+
+    protected virtual MeshData FaceDataUpHalf // Half
+        (Chunk chunk, int x, int y, int z, MeshData meshData)
+    {
+        meshData.AddVertex(new Vector3(x - 0.5f, y + slabHeight, z + 0.5f));
+        meshData.AddVertex(new Vector3(x + 0.5f, y + slabHeight, z + 0.5f));
+        meshData.AddVertex(new Vector3(x + 0.5f, y + slabHeight, z - 0.5f));
+        meshData.AddVertex(new Vector3(x - 0.5f, y + slabHeight, z - 0.5f));
+
+        meshData.AddQuadTriangles();
+        meshData.uv.AddRange(FaceUVs(Direction.up));
+        return meshData;
+    }
+
+    protected virtual MeshData FaceDataDownHalf // Half
+        (Chunk chunk, int x, int y, int z, MeshData meshData)
+    {
+        meshData.AddVertex(new Vector3(x - 0.5f, y - slabHeight, z - 0.5f));
+        meshData.AddVertex(new Vector3(x + 0.5f, y - slabHeight, z - 0.5f));
+        meshData.AddVertex(new Vector3(x + 0.5f, y - slabHeight, z + 0.5f));
+        meshData.AddVertex(new Vector3(x - 0.5f, y - slabHeight, z + 0.5f));
+
+        meshData.AddQuadTriangles();
+        meshData.uv.AddRange(FaceUVs(Direction.down));
+        return meshData;
+    }
+
+
+    
 
 
 

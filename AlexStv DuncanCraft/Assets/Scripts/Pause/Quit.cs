@@ -15,6 +15,8 @@ public class Quit : MonoBehaviour
             chunksToDelete.Add(chunk.Key);
         foreach (var chunk in chunksToDelete)
             world.DestroyChunk(chunk.x, chunk.y, chunk.z);
+
+        Destroy(GameObject.FindGameObjectWithTag("WorldName").gameObject);
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 }

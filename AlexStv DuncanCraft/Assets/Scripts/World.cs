@@ -12,6 +12,8 @@ public class World : MonoBehaviour
     private int randY;
     private string path;
 
+    public GameObject navMeshBuild;
+
     void Start()
     {
         worldName = GameObject.FindGameObjectWithTag("WorldName").GetComponent<WorldName>().worldName;
@@ -59,6 +61,7 @@ public class World : MonoBehaviour
 
         //Add it to the chunks dictionary with the position as the key
         chunks.Add(worldPos, newChunk);
+        
 
         var terrainGen = new TerrainGen();
         newChunk = terrainGen.ChunkGen(newChunk, randY);

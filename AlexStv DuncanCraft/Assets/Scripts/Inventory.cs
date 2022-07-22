@@ -17,14 +17,28 @@ public class Inventory : MonoBehaviour
 
     public void Start()
     {
-        blocks.Add(new Block());
-        blocks.Add(new BlockGrass());
-        blocks.Add(new BlockGlass());
-        blocks.Add(new BlockPlank());
-        blocks.Add(new BlockWood());
-        blocks.Add(new BlockFlower());
-        blocks.Add(new BlockLeaves());
-        blocks.Add(new BlockCoal());
+        blocks.Add(new Block());//0
+        blocks.Add(new BlockGrass());//1
+        blocks.Add(new BlockGlass());//2
+        blocks.Add(new BlockPlank());//3
+        //
+        blocks.Add(new BlockWood());//4
+        blocks.Add(new BlockFlower());//5
+        blocks.Add(new BlockLeaves());//6
+        blocks.Add(new BlockCoal());//7
+        //
+        blocks.Add(new BlockGreenWool()); //8
+        blocks.Add(new BlockRedWool()); //9
+        blocks.Add(new BlockBlackWool()); //10
+        blocks.Add(new BlockWhiteWool());//11
+        //
+        blocks.Add(new BlockSpong());//12
+        blocks.Add(new BlockDuncan());//13
+        blocks.Add(new BlockGoldWool());//14
+        blocks.Add(new BlockBlueWool());//15
+        //
+        blocks.Add(new BlockSlab());//16
+
     }
 
     public void changeBlock()
