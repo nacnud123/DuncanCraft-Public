@@ -15,14 +15,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public bool smooth;
         public float smoothTime = 5f;
         public bool lockCursor = true;
-        public bool inInv = false;
-        public bool GameStop = false;
-        public bool inPas = false;
-        public bool gamer = false;
-        public bool pauseGamer = false;
+        public bool paused = false;
         public GameObject bigInv;
         public GameObject pause;
-
+        public GameObject craft;
 
         private Quaternion m_CharacterTargetRot;
         private Quaternion m_CameraTargetRot;
@@ -37,7 +33,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         public void LookRotation(Transform character, Transform camera)
         {
-            if(GameStop != true)
+            if(!paused)
             {
                 float yRot = CrossPlatformInputManager.GetAxis("Mouse X") * XSensitivity;
                 float xRot = CrossPlatformInputManager.GetAxis("Mouse Y") * YSensitivity;
@@ -84,45 +80,21 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void InternalLockUpdate()
         {
-            if (gamer)
+            if (paused)
             {
                 m_cursorIsLocked = false;
-                inInv = true;
-                GameStop = true;
 
-                //Time.timeScale = 0;
-            }
-            if (pauseGamer)
-            {
-                m_cursorIsLocked = false;
-                inPas = true;
-                GameStop = true;
-                
-
-            }
-
-            if(Input.GetMouseButtonUp(0))
-            {
-                m_cursorIsLocked = true;
-                if (inInv == true)
+                if (Input.GetMouseButtonUp(0))
                 {
+                    m_cursorIsLocked = true;
+
                     Time.timeScale = 1;
                     bigInv.SetActive(false);
-                    gamer = false;
-                    inInv = false;
-                    GameStop = false;
-                }
-                if (inPas == true)
-                {
-                    Time.timeScale = 1;
                     pause.SetActive(false);
-                    pauseGamer = false;
-                    inPas = false;
-                    GameStop = false;
+                    craft.SetActive(false);
+                    paused = false;
                 }
-
             }
-
 
             if (m_cursorIsLocked)
             {

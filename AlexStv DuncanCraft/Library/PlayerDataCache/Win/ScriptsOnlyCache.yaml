@@ -4,9 +4,11 @@ ScriptsOnlyBuild:
     - UnityStandardAssets.Characters.FirstPerson.FirstPersonController
     Assembly-CSharp.dll:
     - BackToGame
+    - BigCraft
     - BigInvintory
     - BigPause
     - Chunk
+    - Crafting
     - Inventory
     - Modify
     - Quit
@@ -15,6 +17,13 @@ ScriptsOnlyBuild:
     - worldStart
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -26,8 +35,98 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.InputField
+    - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.Text
+  serializedClasses:
+    Assembly-CSharp:
+    - Block
+    - WorldPos
+    Assembly-CSharp-firstpass:
+    - UnityStandardAssets.Characters.FirstPerson.MouseLook
+    - UnityStandardAssets.Utility.CurveControlledBob
+    - UnityStandardAssets.Utility.FOVKick
+    - UnityStandardAssets.Utility.LerpControlledBob
+    Unity.TextMeshPro:
+    - TMPro.FaceInfo_Legacy
+    - TMPro.FontAssetCreationSettings
+    - TMPro.KerningTable
+    - TMPro.TMP_Character
+    - TMPro.TMP_FontFeatureTable
+    - TMPro.TMP_FontWeightPair
+    - TMPro.TMP_GlyphAdjustmentRecord
+    - TMPro.TMP_GlyphPairAdjustmentRecord
+    - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_InputField/OnChangeEvent
+    - TMPro.TMP_InputField/SelectionEvent
+    - TMPro.TMP_InputField/SubmitEvent
+    - TMPro.TMP_InputField/TextSelectionEvent
+    - TMPro.TMP_InputField/TouchScreenKeyboardEvent
+    - TMPro.TMP_Sprite
+    - TMPro.TMP_SpriteCharacter
+    - TMPro.TMP_SpriteGlyph
+    - TMPro.TMP_Style
+    - TMPro.VertexGradient
+    UnityEngine.CoreModule:
+    - UnityEngine.Events.ArgumentCache
+    - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.Events.PersistentListenerMode
+    UnityEngine.TextCoreFontEngineModule:
+    - UnityEngine.TextCore.FaceInfo
+    - UnityEngine.TextCore.Glyph
+    - UnityEngine.TextCore.GlyphMetrics
+    - UnityEngine.TextCore.GlyphRect
+    UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
+    - UnityEngine.UI.FontData
+    - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: worldStart
+    methodName: quitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: worldStart
+    methodName: getInput
+  - assembly: Assembly-CSharp
+    fullTypeName: Crafting
+    methodName: Craft
+  - assembly: Assembly-CSharp
+    fullTypeName: Crafting
+    methodName: Craft
+  - assembly: Assembly-CSharp
+    fullTypeName: Crafting
+    methodName: Craft
+  - assembly: Assembly-CSharp
+    fullTypeName: Crafting
+    methodName: Craft
+  - assembly: Assembly-CSharp
+    fullTypeName: Crafting
+    methodName: Craft
+  - assembly: Assembly-CSharp
+    fullTypeName: Crafting
+    methodName: Craft
+  - assembly: Assembly-CSharp
+    fullTypeName: Crafting
+    methodName: Craft
+  - assembly: Assembly-CSharp
+    fullTypeName: Crafting
+    methodName: Craft
+  - assembly: Assembly-CSharp
+    fullTypeName: Crafting
+    methodName: Craft
+  - assembly: Assembly-CSharp
+    fullTypeName: Crafting
+    methodName: Craft
+  - assembly: Assembly-CSharp
+    fullTypeName: Crafting
+    methodName: Craft
+  - assembly: Assembly-CSharp
+    fullTypeName: Crafting
+    methodName: Craft
   sceneClasses:
     Assets/Scenes/Main.unity:
     - Class: 1
@@ -67,39 +166,47 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1496}
+      Script: {instanceID: 1590}
     - Class: 114
-      Script: {instanceID: 1498}
+      Script: {instanceID: 1638}
     - Class: 114
-      Script: {instanceID: 1542}
+      Script: {instanceID: 1726}
     - Class: 114
-      Script: {instanceID: 1622}
+      Script: {instanceID: 1822}
     - Class: 114
-      Script: {instanceID: 1714}
+      Script: {instanceID: 1912}
     - Class: 114
-      Script: {instanceID: 1798}
+      Script: {instanceID: 1916}
     - Class: 114
-      Script: {instanceID: 2030}
+      Script: {instanceID: 2168}
     - Class: 114
-      Script: {instanceID: 2424}
+      Script: {instanceID: 2608}
     - Class: 114
-      Script: {instanceID: 2542}
+      Script: {instanceID: 2730}
     - Class: 114
-      Script: {instanceID: 2750}
+      Script: {instanceID: 2788}
     - Class: 114
-      Script: {instanceID: 2930}
+      Script: {instanceID: 2944}
     - Class: 114
-      Script: {instanceID: 2988}
+      Script: {instanceID: 2964}
     - Class: 114
-      Script: {instanceID: 2990}
+      Script: {instanceID: 3170}
     - Class: 114
-      Script: {instanceID: 3026}
+      Script: {instanceID: 3236}
     - Class: 114
-      Script: {instanceID: 3060}
+      Script: {instanceID: 3238}
     - Class: 114
-      Script: {instanceID: 4760}
+      Script: {instanceID: 3276}
     - Class: 114
-      Script: {instanceID: 16766}
+      Script: {instanceID: 3314}
+    - Class: 114
+      Script: {instanceID: 3564}
+    - Class: 114
+      Script: {instanceID: 5182}
+    - Class: 114
+      Script: {instanceID: 20572}
+    - Class: 114
+      Script: {instanceID: 31534}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -137,32 +244,48 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1496}
+      Script: {instanceID: 1638}
     - Class: 114
-      Script: {instanceID: 1498}
+      Script: {instanceID: 1664}
     - Class: 114
-      Script: {instanceID: 1542}
+      Script: {instanceID: 1758}
     - Class: 114
-      Script: {instanceID: 1916}
+      Script: {instanceID: 1912}
     - Class: 114
-      Script: {instanceID: 2424}
+      Script: {instanceID: 2046}
     - Class: 114
-      Script: {instanceID: 2542}
+      Script: {instanceID: 2246}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2608}
     - Class: 114
-      Script: {instanceID: 2930}
+      Script: {instanceID: 2730}
     - Class: 114
-      Script: {instanceID: 3026}
+      Script: {instanceID: 2788}
     - Class: 114
-      Script: {instanceID: 3704}
+      Script: {instanceID: 2944}
+    - Class: 114
+      Script: {instanceID: 3170}
+    - Class: 114
+      Script: {instanceID: 3276}
+    - Class: 114
+      Script: {instanceID: 4018}
+    - Class: 114
+      Script: {instanceID: 4378}
+    - Class: 114
+      Script: {instanceID: 4392}
+    - Class: 114
+      Script: {instanceID: 4686}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -190,10 +313,10 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
+    namespaceName: UnityEngine.UIElements
+    className: PanelRaycaster
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -214,7 +337,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: b48bb6a003a472f0af6033a836dbc0ff
+      Hash: 6117de3928f49538e2fad333d136eb5e
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Characters.FirstPerson
     className: FirstPersonController
@@ -346,6 +469,12 @@ ScriptsOnlyBuild:
     className: PlatformSpecificContent
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UIElements
+    className: PanelEventHandler
+  - hash:
+      serializedVersion: 2
       Hash: f5c0b8e83bd1f9f7215d9b0586c8d473
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -358,16 +487,16 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 800c50acba124432abb4cf0d47202e06
-    assemblyName: Unity.TextMeshPro.dll
-    namespaceName: TMPro
-    className: TMP_StyleSheet
-  - hash:
-      serializedVersion: 2
       Hash: 385666d964b0eabb4136cbb95125e502
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Cameras
     className: ProtectCameraFromWallClip
+  - hash:
+      serializedVersion: 2
+      Hash: 800c50acba124432abb4cf0d47202e06
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
       Hash: 91d258529db2b5060a913f2afcea1a21
@@ -490,7 +619,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: a74405a4829a834d107a0c6e072719ed
+      Hash: c822eec45bd7c5f6d7c8a2d82a6feb07
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
@@ -550,6 +679,12 @@ ScriptsOnlyBuild:
     className: TimedObjectDestructor
   - hash:
       serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -562,7 +697,7 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
-      Hash: a306e12d896ddcca949923c805691027
+      Hash: 8fbc134fd506d97c845cf2b715231396
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: InputField
@@ -652,22 +787,22 @@ ScriptsOnlyBuild:
     className: Chunk
   - hash:
       serializedVersion: 2
-      Hash: 014809eaa1dcbe353242ab5a472d17ac
+      Hash: 56f8228e878f7019037bc33ed9f5596c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Inventory
-  - hash:
-      serializedVersion: 2
-      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: ToggleGroup
   - hash:
       serializedVersion: 2
       Hash: 69415240821be7986b27e72bf9609a30
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ToggleGroup
   - hash:
       serializedVersion: 2
       Hash: 97a580c59cad3623a01bbf5fb2d7fa93
@@ -748,6 +883,12 @@ ScriptsOnlyBuild:
     className: SkidTrail
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Crafting
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -784,7 +925,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: da4cc51a02ce84afe2cecd27cfe6997a
+      Hash: 27ec3360f0c0a6803ba71cc3106480b8
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshPro
@@ -916,7 +1057,7 @@ ScriptsOnlyBuild:
     className: AICharacterControl
   - hash:
       serializedVersion: 2
-      Hash: 75e8b7f7520d4d1810ec1e2d5f2a8b78
+      Hash: fc6d7994adb6adf7e318b14d4f235928
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Characters.FirstPerson
     className: RigidbodyFirstPersonController
@@ -1120,7 +1261,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 19b4ac884271226bd9a0a092906cd208
+      Hash: 7c50954b7c2d6758afc5792a386401e9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Modify
@@ -1136,8 +1277,15 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: SimpleActivatorMenu
+  - hash:
+      serializedVersion: 2
+      Hash: f5c0b8e83bd1f9f7215d9b0586c8d473
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BigCraft
   platform: 5
   scenePathNames:
   - Assets/Scenes/StatingMenu.unity
   - Assets/Scenes/Main.unity
-  playerPath: C:/Users/978du/Desktop/DuncanCraft Builds/DuncanCraft Classic.exe
+  playerPath: C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft
+    Classic.exe

@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
+using TMPro;
+using System.Collections.Generic;
 
 public class Modify : MonoBehaviour
 {
 
-    Vector2 rot;
+    //Vector2 rot;
     public LayerMask layerMask;
 
     public static Block currentBlockIn;
@@ -13,7 +14,8 @@ public class Modify : MonoBehaviour
     public static string displayBlock;
     public static bool inInvi = false;
 
-    public Text blockOut;
+    public TextMeshProUGUI blockOut;
+    public UnityStandardAssets.Characters.FirstPerson.FirstPersonController fpCon;
 
     //public GameObject Invintory;
 
@@ -21,58 +23,27 @@ public class Modify : MonoBehaviour
     private void Start()
     {
         currentBlock = new BlockGrass();
-        blockOut.text = "Current Block: Grass";
+        currentBlockIn = currentBlock;
+        displayBlock = currentBlock.GetName();
+        Inventory.inv.Add(currentBlock, 1);
+        Inventory.PrintInventory();
+        blockOut.text = "Current Block: Grass: 1";
+        fpCon = GameObject.FindGameObjectWithTag("Player").GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>();
     }
 
     private void FixedUpdate()
     {
-        /*if (Input.GetKeyDown(KeyCode.E))
-        //{
-        //    Invintory.SetActive(true);
-            //currentBlock = new BlockGrass();
-            //blockOut.text = "Current Block: Grass";
-        //}
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            currentBlock = new Block();
-            blockOut.text = "Current Block: Stone";
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            currentBlock = new BlockLeaves();
-            blockOut.text = "Current Block: Leaves";
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            currentBlock = new BlockWood();
-            blockOut.text = "Current Block: Wood";
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            currentBlock = new BlockCoal();
-            blockOut.text = "Current Block: Coal Ore";
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha6))
-        {
-            currentBlock = new BlockFlower();
-            blockOut.text = "Current Block: Dandelion";
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha7))
-        {
-            currentBlock = new BlockPlank();
-            blockOut.text = "Current Block: Wood Plank";
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha8))
-        {
-            currentBlock = new BlockGlass();
-            blockOut.text = "Current Block: Glass";
-        }*/
-
      
         if (currentBlockIn != null)
         {
             currentBlock = currentBlockIn;
-            blockOut.text = "Current Block: " + displayBlock;
+            if (Inventory.InvContainsItem(currentBlock))
+            {
+                blockOut.text = "Current Block: " + displayBlock + ": " + Inventory.inv[Inventory.GetKeyOfType(currentBlock)];
+            } else
+            {
+                blockOut.text = "Current Block: " + displayBlock + ": 0";
+            }
         }
         
     }
@@ -82,22 +53,48 @@ public class Modify : MonoBehaviour
     {
         
         Debug.DrawRay(transform.position, transform.forward, Color.green);
+        //Break block
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.forward, out hit, 4, layerMask))
+            if (Physics.Raycast(transform.position, transform.forward, out hit, 4, layerMask)
+                /*&& !fpCon.GetMouseLook().paused*/)
             {
-                
+                Inventory.UpdateInventory(EditTerrain.GetBlock(hit), 1);
+
+                if(EditTerrain.GetBlock(hit).GetName() == "Block of Coal")
+                {
+                    Inventory.UpdateItems(ItemList.coalOre, 1);
+                }
+
                 EditTerrain.SetBlock(hit, new BlockAir());
+                KeyValuePair<Item, int> items = ItemList.GetRandomItems();
+                Inventory.UpdateItems(items.Key, items.Value);
             }
         }
+
+        //Place block/Interact
         if (Input.GetKeyUp(KeyCode.Mouse1))
         {
             RaycastHit hit;
 
             if (Physics.Raycast(transform.position, transform.forward, out hit, 4, layerMask))
             {
-                EditTerrain.SetBlock(hit, currentBlock, true);
+                //Debug.Log(EditTerrain.GetBlock(hit).interactable);
+
+                if (EditTerrain.GetBlock(hit).interactable)
+                {
+                    fpCon.PauseOnWindow(fpCon.craft, UnityStandardAssets.Characters.FirstPerson.FirstPersonController.Window.craft);
+                } else if(Inventory.InvContainsItem(currentBlock))
+                {
+                    if(Inventory.inv[Inventory.GetKeyOfType(currentBlock)] > 0)
+                    {
+                        EditTerrain.SetBlock(hit, currentBlock, true);
+
+                        Inventory.UpdateInventory(currentBlock, -1);
+                    }
+                }
+                
             }
         }
         

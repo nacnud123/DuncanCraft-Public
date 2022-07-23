@@ -1,0 +1,548 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1658554562472305, "dur": 337064, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1658554562473534, "dur": 13580, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1658554562487321, "dur": 311828, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1658554562799166, "dur": 10203, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1658554565878787, "dur": 1086234, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1658554565879084, "dur": 5476, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1658554565884562, "dur": 31614, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1658554565916210, "dur": 219122, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1658554566135334, "dur": 816314, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1658554566951650, "dur": 13369, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1658554566965589, "dur": 17, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1658554566012043, "dur": 104510, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1658554566013047, "dur": 40324, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1658554566100997, "dur": 4655, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1658554566105655, "dur": 10891, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1658554566106487, "dur": 9182, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1658554566121184, "dur": 1292, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1658554566120420, "dur": 2080, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1658554566965709, "dur": 164, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1658554566167324, "dur":1673, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566169004, "dur":38, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1658554566169051, "dur":13, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1658554566169065, "dur":528, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1658554566169617, "dur":666, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566170283, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934084, "dur":290, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934374, "dur":42, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934416, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934419, "dur":24, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934443, "dur":127, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934570, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934581, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934582, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934588, "dur":15, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934603, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934608, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934609, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934615, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934616, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934622, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934623, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934628, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934629, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934634, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934635, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934639, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934640, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934646, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934647, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934652, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934664, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566934667, "dur":2139, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1658554566170370, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566170370, "dur":4001, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566174375, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1658554566174494, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566179922, "dur":1240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1658554566181205, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1658554566181249, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566181257, "dur":1924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1658554566183222, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566183272, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566183278, "dur":79031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566262361, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566262416, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566262427, "dur":25300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566287771, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566287819, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566287850, "dur":93046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566380938, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566380978, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566380987, "dur":34077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566415409, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566415459, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566415467, "dur":63120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566478631, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566478672, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566478682, "dur":42849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566521587, "dur":36329, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566557921, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566557955, "dur":986, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566558979, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566559019, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566559027, "dur":139614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566698681, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566698719, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566698728, "dur":62704, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":1, "ts":1658554566761474, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":1, "ts":1658554566761591, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566762515, "dur":883, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":1, "ts":1658554566763934, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1658554566763992, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566764057, "dur":1140, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1658554566765260, "dur":250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":1, "ts":1658554566765519, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566765561, "dur":1096, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":1, "ts":1658554566766698, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1658554566766738, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566766747, "dur":1109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1658554566767898, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1658554566767939, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566767945, "dur":1160, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1658554566769154, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1658554566769194, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566769201, "dur":1194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1658554566770484, "dur":717, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1658554566771204, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566771210, "dur":1591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1658554566772838, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/level0.resS" }}
+,{ "pid":12345, "tid":1, "ts":1658554566772878, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566772884, "dur":1480, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/level0.resS" }}
+,{ "pid":12345, "tid":1, "ts":1658554566774412, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1658554566774456, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1658554566774462, "dur":2296, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1658554566776796, "dur":157298, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1658554566170126, "dur":429, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1658554566170555, "dur":3880, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1658554566174435, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1658554566174605, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1658554566254343, "dur":1319, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1658554566255707, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566255751, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1658554566255759, "dur":53278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566309081, "dur":127597, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566436685, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1658554566436719, "dur":10214, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566446970, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566447008, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1658554566447015, "dur":40942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566487996, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566488044, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1658554566488053, "dur":24232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566512327, "dur":42804, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566555137, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1658554566555148, "dur":1411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566556597, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566556635, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1658554566556645, "dur":98512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566655200, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566655259, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1658554566655268, "dur":101989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566757298, "dur":90670, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566847972, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1658554566847980, "dur":987, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":2, "ts":1658554566848994, "dur":85105, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1658554566169909, "dur":502, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1658554566170411, "dur":4024, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1658554566174436, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1658554566174610, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1658554566255001, "dur":901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1658554566255941, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566255983, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1658554566255991, "dur":21948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566278011, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566278055, "dur":8, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1658554566278072, "dur":22619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566300732, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566300777, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1658554566300785, "dur":52377, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566353210, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566353252, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1658554566353261, "dur":61532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566414837, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566414884, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1658554566414894, "dur":31711, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566446652, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566446697, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1658554566446707, "dur":94266, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566541017, "dur":653, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566541674, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1658554566541684, "dur":928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566542653, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566542693, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1658554566542701, "dur":85771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566628511, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566628548, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1658554566628556, "dur":155008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1658554566783603, "dur":150479, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566170000, "dur":473, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566170473, "dur":3897, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566174375, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":4, "ts":1658554566174563, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566249896, "dur":1092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":4, "ts":1658554566251032, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566251081, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566251090, "dur":90663, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566341795, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566341839, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566341871, "dur":47545, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566389462, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566389506, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566389515, "dur":27849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566417467, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566417528, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566417537, "dur":37495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566455072, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566455111, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566455119, "dur":26196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566481374, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566481443, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566481453, "dur":42744, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566524234, "dur":1137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566525377, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566525387, "dur":925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566526350, "dur":903, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566527257, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566527267, "dur":1356, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566528707, "dur":34022, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566562735, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566562745, "dur":1030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566563812, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566563852, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566563860, "dur":145519, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566709415, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566709455, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1658554566709463, "dur":166696, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1658554566876187, "dur":57905, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1658554566169987, "dur":452, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1658554566170439, "dur":4000, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1658554566174440, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1658554566174658, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1658554566262691, "dur":1125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1658554566263857, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566263906, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1658554566263913, "dur":36945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566300900, "dur":1126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566302031, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1658554566302040, "dur":144591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566446671, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566446714, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1658554566446722, "dur":21550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566468687, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566468737, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1658554566468746, "dur":110637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566579423, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566579467, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1658554566579477, "dur":29168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566608687, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566608730, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1658554566608739, "dur":99603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566708380, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566708421, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1658554566708429, "dur":225589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":5, "ts":1658554566934046, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":5, "ts":1658554566934047, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566169796, "dur":573, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566170369, "dur":4044, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566174413, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1658554566174499, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566180327, "dur":1106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1658554566181473, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566181516, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566181992, "dur":61698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566243782, "dur":553, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic.exe" }}
+,{ "pid":12345, "tid":6, "ts":1658554566244338, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566244344, "dur":1661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic.exe" }}
+,{ "pid":12345, "tid":6, "ts":1658554566246046, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566246096, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566246148, "dur":37887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566284079, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566284134, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566284141, "dur":48097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566332278, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566332318, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566332326, "dur":102176, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566434548, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566434590, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566434600, "dur":38422, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566473065, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566473109, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566473118, "dur":38206, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566511367, "dur":9141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566520514, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566520525, "dur":1276, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566521839, "dur":28075, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566549920, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566549932, "dur":1077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566551048, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566551090, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566551099, "dur":98577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566649716, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566649756, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566649766, "dur":118556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1658554566768363, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1658554566768409, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566768416, "dur":2025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1658554566770483, "dur":800, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1658554566771286, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566771292, "dur":1230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1658554566772559, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1658554566772600, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566772605, "dur":2052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1658554566774694, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1658554566774735, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566774740, "dur":1377, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1658554566776159, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/boot.config" }}
+,{ "pid":12345, "tid":6, "ts":1658554566776272, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1658554566776279, "dur":814, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/boot.config" }}
+,{ "pid":12345, "tid":6, "ts":1658554566777129, "dur":156948, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566170210, "dur":355, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566170565, "dur":3871, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566174437, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1658554566174618, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566255184, "dur":1105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1658554566256331, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566256376, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566256384, "dur":115225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566371651, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566371690, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566371722, "dur":27670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566399436, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566399480, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566399490, "dur":30783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566430327, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566430369, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566430389, "dur":35110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566465563, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566465604, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566465614, "dur":32660, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566498315, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566498364, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566498396, "dur":23799, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566522239, "dur":640, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566522884, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566522893, "dur":1006, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566523940, "dur":43656, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566567601, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566567612, "dur":1029, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566568680, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566568743, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566568751, "dur":69045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566637839, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566637878, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1658554566637887, "dur":161300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":7, "ts":1658554566799227, "dur":134852, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566170322, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566170322, "dur":4043, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566174375, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":8, "ts":1658554566174377, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566174479, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/app.info" }}
+,{ "pid":12345, "tid":8, "ts":1658554566174483, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566175534, "dur":2672, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/app.info" }}
+,{ "pid":12345, "tid":8, "ts":1658554566178208, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1658554566178255, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566178905, "dur":1164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1658554566180145, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1658554566180207, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566180235, "dur":1188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1658554566181461, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":8, "ts":1658554566181500, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566181508, "dur":1832, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":8, "ts":1658554566183392, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/UnityCrashHandler32.exe" }}
+,{ "pid":12345, "tid":8, "ts":1658554566183444, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566183450, "dur":62545, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/UnityCrashHandler32.exe" }}
+,{ "pid":12345, "tid":8, "ts":1658554566246042, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566246088, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566246145, "dur":43695, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566289885, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566289925, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566289934, "dur":21488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566311461, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566311503, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566311513, "dur":19904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566331467, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566331520, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566331532, "dur":65766, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566397342, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566397404, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566397414, "dur":32833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566430296, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566430351, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566430360, "dur":27505, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566457908, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566457949, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566457958, "dur":45269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566503275, "dur":123812, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566627093, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566627105, "dur":1906, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566629048, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566629107, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1658554566629115, "dur":181497, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1658554566810639, "dur":123475, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566170471, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566170472, "dur":3899, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566174375, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":9, "ts":1658554566174493, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566176654, "dur":1619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":9, "ts":1658554566178307, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1658554566178365, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566178744, "dur":1250, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1658554566180033, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1658554566180074, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566180203, "dur":1110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1658554566181391, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":9, "ts":1658554566181442, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566181450, "dur":1214, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":9, "ts":1658554566182709, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566182759, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566182858, "dur":61546, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566244483, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":9, "ts":1658554566244526, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566244771, "dur":6337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":9, "ts":1658554566251152, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566251204, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566251212, "dur":36709, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566287966, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566288029, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566289602, "dur":64861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566354512, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566354553, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566354561, "dur":48937, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566403543, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566403592, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566403602, "dur":62926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566466575, "dur":195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566466774, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566466783, "dur":27138, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566493965, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566494006, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566494016, "dur":49687, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566543740, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566543796, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1658554566543804, "dur":265156, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":9, "ts":1658554566809013, "dur":125095, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566170588, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566170589, "dur":3849, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566174438, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1658554566174557, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566249336, "dur":2234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1658554566251615, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566251671, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566251679, "dur":32227, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566283949, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566283992, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566284001, "dur":43555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566327595, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566327634, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566327643, "dur":53893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566381588, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566381632, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566381640, "dur":64983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566446667, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566446712, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566446718, "dur":28595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566475365, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566475421, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566475431, "dur":21949, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566497417, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566497457, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566497465, "dur":39232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566536738, "dur":775, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566537517, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566537527, "dur":1343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566538914, "dur":25127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566564045, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566564053, "dur":1338, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566565430, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566565470, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566565478, "dur":106148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566671680, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566671737, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1658554566671749, "dur":117361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":10, "ts":1658554566789150, "dur":144930, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1658554566170714, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1658554566170714, "dur":3725, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1658554566174439, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1658554566174553, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1658554566244614, "dur":1025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1658554566245681, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566245727, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1658554566246006, "dur":96347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566342391, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566342436, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1658554566342443, "dur":36168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566378657, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566378699, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1658554566378708, "dur":49587, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566428341, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566428387, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1658554566428397, "dur":26006, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566454446, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566454488, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1658554566454498, "dur":56608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566511148, "dur":235672, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566746826, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1658554566746836, "dur":1674, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566748547, "dur":71958, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566820509, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1658554566820517, "dur":1127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":11, "ts":1658554566821684, "dur":112397, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566170818, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566170818, "dur":3596, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566174414, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":12, "ts":1658554566174555, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566244624, "dur":1461, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":12, "ts":1658554566246129, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566246179, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566246186, "dur":53645, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566299884, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566299925, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566299935, "dur":61572, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566361568, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566361614, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566361624, "dur":38174, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566399840, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566399881, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566399889, "dur":52219, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566452154, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566452201, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566452212, "dur":22064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566474316, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566474357, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566474366, "dur":21970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566496386, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566496433, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566496444, "dur":112300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566608784, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566608823, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566608830, "dur":30265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566639136, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566639175, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566639184, "dur":34521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566673748, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566673787, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566673795, "dur":97047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":12, "ts":1658554566770881, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1658554566770921, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566770929, "dur":1561, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1658554566772530, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/resources.assets" }}
+,{ "pid":12345, "tid":12, "ts":1658554566772589, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566772595, "dur":915, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/resources.assets" }}
+,{ "pid":12345, "tid":12, "ts":1658554566773563, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/level0" }}
+,{ "pid":12345, "tid":12, "ts":1658554566773604, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566773610, "dur":1251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/level0" }}
+,{ "pid":12345, "tid":12, "ts":1658554566774896, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":12, "ts":1658554566774936, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1658554566774942, "dur":1589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jmorg/Documents/Game Files/Builds/DuncanCraft Crafting/DuncanCraft Classic_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":12, "ts":1658554566776585, "dur":157509, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1658554566939868, "dur":2163, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1658554566965916, "dur": 581, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1658554566965577, "dur": 936, "ph": "X", "name": "Write chrome-trace events", "args": {} },

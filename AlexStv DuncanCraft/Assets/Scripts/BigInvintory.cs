@@ -11,6 +11,7 @@ public class BigInvintory : MonoBehaviour
         Modify.inInvi = true;
         playerModify.enabled = false;
         print(Modify.inInvi);
+        playerModify.fpCon.itemList.text = Inventory.GetItemsString();
     }
     private void OnDisable()
     {
