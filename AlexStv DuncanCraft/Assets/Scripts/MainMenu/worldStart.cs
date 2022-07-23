@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+using TMPro;
 
 public class worldStart : MonoBehaviour
 {
@@ -16,7 +16,7 @@ public class worldStart : MonoBehaviour
     public WorldName worldNameGameObject;
     public void getInput()
     {
-        var input = gameObject.transform.parent.GetChild(2).GetComponent<InputField>();
+        var input = gameObject.transform.parent.GetChild(2).GetComponent<TMP_InputField>();
         print(input.text);
         worldNameGameObject.worldName = input.text;
         worldNameGameObject.Gamer();

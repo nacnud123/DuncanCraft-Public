@@ -26,7 +26,7 @@ public class TerrainGen
     private float coalSize = 2;
     private float coalFrequency = .01f;
 
-    bool test = false;
+    //bool test = false;
 
 
     public Chunk ChunkGen(Chunk chunk, int randY)

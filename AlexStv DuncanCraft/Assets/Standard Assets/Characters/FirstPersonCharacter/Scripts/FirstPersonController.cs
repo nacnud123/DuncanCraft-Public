@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
+using TMPro;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
@@ -28,6 +29,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
+        public enum Window { inv, pause, craft };
+
         private Camera m_Camera;
         private bool m_Jump;
         private float m_YRotation;
@@ -45,6 +48,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         public GameObject Invintory;
         public GameObject PauseIn;
+        public GameObject craft;
+        public TextMeshProUGUI itemList;
 
         // Use this for initialization
         private void Start()
@@ -87,25 +92,57 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && !m_MouseLook.paused)
             {
-                
-                m_MouseLook.gamer = true;
-                m_MouseLook.UpdateCursorLock();
-                m_MouseLook.bigInv = Invintory;
-                Invintory.SetActive(true);
-                Time.timeScale = 0;
-
-            }
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                m_MouseLook.pauseGamer = true;
-                m_MouseLook.UpdateCursorLock();
-                m_MouseLook.pause = PauseIn;
-                PauseIn.SetActive(true);
-                Time.timeScale = 0;
+                PauseOnWindow(Invintory, Window.inv);
             }
 
+            if (Input.GetKeyDown(KeyCode.Escape) && !m_MouseLook.paused)
+            {
+                PauseOnWindow(PauseIn, Window.pause);
+            }
+        }
+
+        public void PauseOnWindow(GameObject windowObject, Window window)
+        {
+            m_MouseLook.paused = true;
+            m_MouseLook.UpdateCursorLock();
+
+            switch (window)
+            {
+                case Window.inv:
+                    //m_MouseLook.gamer = true;
+                    //m_MouseLook.UpdateCursorLock();
+                    m_MouseLook.bigInv = windowObject;
+                    m_MouseLook.pause = PauseIn;
+                    m_MouseLook.craft = craft;
+                    break;
+                case Window.pause:
+                    //m_MouseLook.pauseGamer = true;
+                    //m_MouseLook.UpdateCursorLock();
+                    m_MouseLook.pause = windowObject;
+                    m_MouseLook.bigInv = Invintory;
+                    m_MouseLook.craft = craft;
+                    break;
+                case Window.craft:
+                    //m_MouseLook.craftGamer = true;
+                    //m_MouseLook.UpdateCursorLock();
+                    //m_MouseLook.inCraft = true;
+                    m_MouseLook.craft = windowObject;
+                    m_MouseLook.pause = PauseIn;
+                    m_MouseLook.bigInv = Invintory;
+                    break;
+                default:
+                    //m_MouseLook.gamer = true;
+                    //m_MouseLook.UpdateCursorLock();
+                    m_MouseLook.bigInv = windowObject;
+                    m_MouseLook.pause = PauseIn;
+                    m_MouseLook.craft = craft;
+                    break;
+            }
+
+            windowObject.SetActive(true);
+            Time.timeScale = 0;
         }
 
 
@@ -283,6 +320,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+        }
+
+        public MouseLook GetMouseLook()
+        {
+            return m_MouseLook;
         }
     }
 }

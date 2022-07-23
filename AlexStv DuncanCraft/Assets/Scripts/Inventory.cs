@@ -11,12 +11,17 @@ public class Inventory : MonoBehaviour
     public Text blockText;
     public int position;
     public List<Block> blocks;
+    public static Dictionary<Craftable, int> inv;
+    public static Dictionary<Craftable, int> items;
     
 
     public string displayText;
 
     public void Start()
     {
+        inv = new Dictionary<Craftable, int>();
+        items = new Dictionary<Craftable, int>();
+
         blocks.Add(new Block());//0
         blocks.Add(new BlockGrass());//1
         blocks.Add(new BlockGlass());//2
@@ -39,6 +44,8 @@ public class Inventory : MonoBehaviour
         //
         blocks.Add(new BlockSlab());//16
         blocks.Add(new BlockDirt());//16
+        //
+        blocks.Add(new BlockCrafting());//17
 
     }
 
@@ -47,77 +54,140 @@ public class Inventory : MonoBehaviour
 
         Modify.currentBlockIn = blocks[position];
         Modify.displayBlock = displayText;
+
+        //UpdateInventory(blocks[position], 1);
+        if(blocks[position].GetName() == "Crafting Table")
+        {
+            UpdateInventory(new BlockCrafting(), 1);
+        }
+
         Time.timeScale = 1;
-        transform.parent.gameObject.SetActive(false);
-
-
-
-        /*if (blockText.text == "Stone")
-        {
-            Modify.currentBlockIn = new Block();
-            Modify.displayBlock = displayText;
-            Time.timeScale = 1;
-            transform.parent.gameObject.SetActive(false);
-            //Modify.inInvi = false;
-
-        }
-        else if (blockText.text == "Grass")
-        {
-            Modify.currentBlockIn = new BlockGrass();
-            Modify.displayBlock = displayText;
-            Time.timeScale = 1;
-            //Modify.inInvi = false;
-            transform.parent.gameObject.SetActive(false);
-        }
-        else if (blockText.text == "Glass")
-        {
-            Modify.currentBlockIn = new BlockGlass();
-            Modify.displayBlock = displayText;
-            Time.timeScale = 1;
-            //Modify.inInvi = false;
-            transform.parent.gameObject.SetActive(false);
-        }
-        else if (blockText.text == "Wood Planks")
-        {
-            Modify.currentBlockIn = new BlockPlank();
-            Modify.displayBlock = displayText;
-            Time.timeScale = 1;
-            //Modify.inInvi = false;
-            transform.parent.gameObject.SetActive(false);
-        }
-        else if (blockText.text == "Logs")
-        {
-            Modify.currentBlockIn = new BlockWood();
-            Modify.displayBlock = displayText;
-            Time.timeScale = 1;
-            //Modify.inInvi = false;
-            transform.parent.gameObject.SetActive(false);
-        }
-        else if (blockText.text == "Flower")
-        {
-            Modify.currentBlockIn = new BlockFlower();
-            Modify.displayBlock = displayText;
-            Time.timeScale = 1;
-            //Modify.inInvi = false;
-            transform.parent.gameObject.SetActive(false);
-        }
-        else if (blockText.text == "Leaves")
-        {
-            Modify.currentBlockIn = new BlockLeaves();
-            Modify.displayBlock = displayText;
-            Time.timeScale = 1;
-            //Modify.inInvi = false;
-            transform.parent.gameObject.SetActive(false);
-        }
-        else if (blockText.text == "Coal Ore")
-        {
-            Modify.currentBlockIn = new BlockCoal();
-            Modify.displayBlock = displayText;
-            Time.timeScale = 1;
-            //Modify.inInvi = false;
-            transform.parent.gameObject.SetActive(false);
-        }*/
+        transform.parent.gameObject.SetActive(false);        
 
     }
 
+    public static void UpdateInventory(Craftable itemToAdd, int amountToAdd)
+    {
+        if (InvContainsItem(itemToAdd))
+        {
+            inv[GetKeyOfType(itemToAdd)] += amountToAdd;
+        }
+        else
+        {
+            inv.Add(itemToAdd, amountToAdd);
+        }
+
+        //PrintInventory();
+    }
+
+    public static void UpdateItems(Item itemToAdd, int amountToAdd)
+    {
+        if (items.ContainsKey(itemToAdd))
+        {
+            items[itemToAdd] += amountToAdd;
+        }
+        else
+        {
+            items.Add(itemToAdd, amountToAdd);
+        }
+
+        PrintInventory();
+    }
+
+    public static void PrintInventory()
+    {
+        Debug.Log("Inventory:");
+
+        foreach(KeyValuePair<Craftable, int> blocks in inv)
+        {
+            Debug.Log(blocks.Key.GetName() + ": " + blocks.Value);
+        }
+    }
+
+    public static bool InvContainsItem(Craftable itemToCheck)
+    {
+        foreach(KeyValuePair<Craftable, int> block in inv)
+        {
+            if(block.Key.GetName() == itemToCheck.GetName())
+            {
+                return true;
+            }
+        }
+
+        foreach(KeyValuePair<Craftable, int> item in items)
+        {
+            if (item.Key.GetName() == itemToCheck.GetName())
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static bool InvHasEnoughItems(Craftable itemToCheck, int amount)
+    {
+        if (InvContainsItem(itemToCheck))
+        {
+            int val;
+            inv.TryGetValue(GetKeyOfType(itemToCheck), out val);
+            if (val >= amount)
+            {
+                return true;
+            }
+
+            items.TryGetValue(itemToCheck, out val);
+            if(val >= amount)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static Craftable GetKeyOfType(Craftable itemToGet)
+    {
+        if (InvContainsItem(itemToGet))
+        {
+            foreach (KeyValuePair<Craftable, int> block in inv)
+            {
+                if (block.Key.GetName() == itemToGet.GetName())
+                {
+                    return block.Key;
+                }
+            }
+
+            foreach (KeyValuePair<Craftable, int> item in items)
+            {
+                if (item.Key.GetName() == itemToGet.GetName())
+                {
+                    return item.Key;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    public static string GetItemsString()
+    {
+        string output = "Items: ";
+        int index = 0;
+
+        foreach(KeyValuePair<Craftable, int> item in items)
+        {
+            if(index == items.Count - 1)
+            {
+                output += item.Key.GetName() + ": " + item.Value;
+            } else
+            {
+                output += item.Key.GetName() + ": " + item.Value + ", ";
+            }
+
+            index++;
+        }
+
+        return output;
+    }
 }
